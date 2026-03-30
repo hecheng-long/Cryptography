@@ -1,5 +1,5 @@
 
-1. 分析方法
+# 1. 分析方法
 
 采用多次填充攻击（多明文攻击），利用流密码同一密钥复用的致命弱点：
 
@@ -11,7 +11,7 @@
 
 • 逐位置遍历：假设某明文字符是空格，推出候选密钥，再验证所有密文对应位置是否都为合法字母/空格
 
-2. 确认明文的方法
+# 2. 确认明文的方法
 
 逐位推导密钥流，保证每个位置满足：
 
@@ -21,5 +21,5 @@
 
 解密结果为通顺英文句子，语义完整，可确认正确
 
-3. 最终明文
- The secret message is: Never use stream cipher key more than once.
+# 3. 最终明文
+ The secret message is: when using a stream cipher, never use the key more than once
